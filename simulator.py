@@ -9,8 +9,8 @@ num_records = int(input("Enter the number of records to generate: "))
 ids = ["amy", "andy", "ben", "chris", "david"]
 media_types = ["AU", "VD", "IM"]
 languages = ["English", "Spanish", "French"]
-interpreter = ["sp28", "sp29", "sp30", "sp31"]
-line = ["1101", "1102", "1103"]
+interpreters = ["sp28", "sp29", "sp30", "sp31"]
+lines = ["1101", "1102", "1103"]
 minutes_range = (5, 60)  # Range for "minute" column
 
 # Generate random data
@@ -23,8 +23,8 @@ for _ in range(num_records):
         "timestamp": (start_time + timedelta(minutes=random.randint(0, 500))).strftime("%m/%d/%Y %H:%M"),
         "media": random.choice(media_types),
         "language": random.choice(languages),
-        "interpreter": random.choice(interpreter),
-        "line": random.choice(line),
+        "interpreter": random.choice(interpreters),
+        "line": random.choice(lines),
         "minutes": random.randint(*minutes_range),
     }
     data.append(record)
