@@ -1,5 +1,5 @@
 ## dataset generator
-dummy data simulation; try it out by:
+data simulation; try it out by:
 ```
 py simulator.py
 ```
