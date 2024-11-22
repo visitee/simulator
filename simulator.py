@@ -11,7 +11,7 @@ media_types = ["AU", "VD", "IM"]
 languages = ["English", "Spanish", "French"]
 interpreters = ["sp28", "sp29", "sp30", "sp31"]
 lines = ["1101", "1102", "1103"]
-minutes_range = (5, 60)  # Range for "minute" column
+minutes_range = (5, 60)
 
 # Generate random data
 data = []
